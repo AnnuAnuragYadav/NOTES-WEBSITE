@@ -62,7 +62,7 @@ body {
     list-style: none;
     display: flex;
     gap: 50px;
-   font-size:;
+    margin-left: 35rem;
 
 
 
@@ -131,7 +131,7 @@ body {
 
 .p1 {
     
-    margin-top: 80px;
+    margin-top: 3rem;
     font-size: 70px;
     font-weight: 700;
     
@@ -143,11 +143,17 @@ body {
 .exams{
     color: #506fc5;
     font-family:'Poppins', sans-serif ;
+    
+   
 }
+
+
+
+
 
 .p2 {
     font-size: 20px;
-    font-family: "segoe UI", sans-serif;
+    font-family: "poppins", sans-serif;
     text-align: center;
 
 }
@@ -168,7 +174,7 @@ body {
     width: 300px;
     padding: 10px 15px;
     border-radius: 20px;
-   border: 1px solid;
+    border: 1px solid;
 
     
 }
@@ -176,32 +182,8 @@ body {
 .search-box i {
     
 
-    color: #000000;
+    color:black;
     cursor: pointer;
-}
-
-.Notes  {
-    text-decoration: none;
-    color: rgb(248, 4, 4);
-    font-size: xx-large;
-    justify-content: space-between;
-    
-    margin-left: 1rem;
-
-}
-
-.pyqs{
-    text-decoration: none;
-    font-size: xx-large;
-    color: rgb(255, 47, 0);
-    margin-left: 1rem;
-}
-
-.resources{
-    text-decoration: none;
-    font-size: xx-large;
-    color: rgb(255, 47, 0);
-    margin-left: 1rem;
 }
 
 
@@ -211,84 +193,108 @@ body {
 
 .link {
     display: flex;
-    margin-top: 150px;
-    justify-content: center;
+    margin: 50px auto;
+    justify-content:center;
+    width: 900p;
     gap: 30px;
+   
     
     
 
 
 }
 .link p{
+    font-size: 14px;
     color:#ffffff;
-    font-family: 'popins';
+    font-family: 'poppins','serif';
+    line-height: 1.6;
 }
 
-.N {
-    background-color: #506fc5;
-    padding: 20px 80px 20px 40px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.821);
-    transition: all 0.3s ease,box-shadow;
-   
-
-}
-
-.N:hover {
-    transform: scale(1.05);
-    box-shadow: 0 2px 12px 1px rgba(0, 0, 0, 0.821);
+.link div{
+    background:#506fc5;
+    color: #ffffff;
+    padding: 30px;
+    width: 265px;
+    height: 265px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.512);
+    transition: all 0.3s ease, box-shadow;
     
 }
 
+.link div:hover{
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px 1px rgba(0, 0, 0, 0.600);
+    background:linear-gradient(35deg, rgb(243, 185, 14), rgb(18, 164, 197),rgb(5, 244, 176),rgb(219, 219, 18));
+    background-size: 200% 200%;
+    animation: gradientMove 6s linear infinite;
+}
+
+@keyframes gradientMove{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.link div button{
+    color: #506fc5;
+    background-color: rgb(253, 255, 255);
+    margin-top: 1rem;
+    padding: 4px 10px;
+    border-radius: 15px;
+    border: 1px solid;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.link a{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color:white;
+    margin-bottom: 10px;
+}
+
+
+
 .N img{
+    margin-bottom: 1rem;
     height:50px;
     width: 50px;
-    color: #ffffff;
+    background-color: #f4f6f9;
+    border-radius: 50%;
+    padding: 8px;
+    align-items: center;
 }
 
-.P {
-    background-color: #506fc5;
-    padding: 30px 80px 30px 45px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.821);
-    transition: all 0.3s ease,box-shadow ;
-
-
-}
-
-.P:hover {
-   transform:scale(1.05);
-    box-shadow: 0 2px 12px 1px rgba(0, 0, 0, 0.821);
-   
-
-}
 
 .P img{
+    margin-bottom: 1rem;
     height:50px;
     width: 50px;
-}
-
-.R {
-    background-color: #506fc5;
-    padding: 30px 50px 30px 60px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.821);
-    transition: all 0.3s ease, box-shadow;
-
-}
-
-
-
-.R:hover {
-    transform:scale(1.05);
-    box-shadow: 0 2px 12px 1px rgba(0, 0, 0, 0.821);
-
-
+    background-color: #f4f6f9;
+    border-radius: 50%;
+    padding: 5%;
+    align-items: center;
+    
 }
 
 .R img{
+    margin-bottom: 1rem;
     height:50px;
     width: 50px;
+    background-color: #f4f6f9;
+    border-radius: 50%;
+    padding: 5%;
 }
-
 

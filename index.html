@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes website</title>
     <link rel="stylesheet" href="design.css">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
 
@@ -14,13 +15,13 @@
         <nav class="navigation">
             <div class="logo">
                 <span>ANNU<span class="hub">NoteHub</span></span><br>
-                
+
             </div>
             <div>
                 <ul class="nav-links">
 
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#notes">Notes</a></li>
+                    <li><a href="#notes-block">Notes</a></li>
                     <li><a href="#pyqs">PYQs</a></li>
                     <li><a href="#resources">Resources</a></li>
                     <li><a href="#aboutus">About us</a></li>
@@ -42,14 +43,19 @@
         <div class="intro">
             <p class="p1">Ace Your <span class="exams">Exams</span> With Us.</p>
             <p class="p2">Access Quality Notes, Past Papers, and study resources to exel<br> in your exams.</p><br>
+
             <div class="search-box">
-                
-                <input type="text" placeholder="search subjects..."  >
-                <i class="fa-solid fa-magnifying-glass"></i>
-                
+
+
+                <input type="text" id="searchInput" placeholder="search subjects..."
+                    onkeypress="if(event.key==='Enter') searchFunction()">
+                <i class="fa-solid fa-magnifying-glass" onclick="searchFunction()"></i>
                 
 
+
+
             </div>
+            <ul id="suggestions"></ul>
         </div>
 
 
@@ -58,22 +64,23 @@
 
         <div class="link">
             <div class="N">
+                
                 <img src="writting.png" alt="" srcset="">
-                <a class="Notes" href="notes.html">Notes</a>
+                <a class="Notes" href="#notes">Notes</a>
                 <p>Download high quality notes <br>for all your subjects.</p>
                 <button>Know more</button>
             </div>
 
             <div class="P">
                 <img src="question.png" alt="" srcset="">
-                <a class="pyqs" href="pyqs.html">PYQs</a>
+                <a class="pyqs" href="#pyqs">PYQs</a>
                 <p>Get access to previous year <br>question papers.</p>
                 <button>Know more</button>
             </div>
 
             <div class="R">
                 <img src="books-stack-of-three.png" alt="" srcset="">
-                <a class="resources" href="resources.html">Resources</a>
+                <a class="resources" href="#resources">Resources</a>
                 <p>Explore study guides tips, <br>and more.</p>
                 <button>Know more</button>
             </div>
@@ -81,6 +88,60 @@
 
 
         </div>
+
+        <div class="notes-block" id="notes-block">
+            <div class="library">
+                <h1>Notes Library</h1>
+            </div>
+
+            <div class="notes-library">
+                <div class="notes-cont">
+                    
+                    <div>
+                       <i class="fa-solid fa-atom" style="color: rgb(252, 252, 250);"></i>
+                        <a href="">Physics Notes</a>
+                        <p>Explore study guides tips, <br>and more.</p>
+                        <a href="notes.pdf" download>
+                        <button>Download Notes</button>
+                        </a>
+                    </div>
+
+                    <div>
+                        <i class="fa-brands fa-html5" style="color: rgb(255, 255, 255);"></i>
+                        <a href="">HTML Notes</a>
+                        <p>Explore study guides tips, <br>and more.</p>
+                        <a href="notes.pdf" download>
+                        <button>Download Notes</button>
+                        </a>
+                    </div>
+
+                    
+
+                    <div>
+                        <i class="fa-brands fa-css3-alt" style="color: rgb(250, 252, 255);"></i>
+                        <a href="">CSS Notes</a>
+                        <p>Explore study guides tips, <br>and more.</p>
+                        <a href="notes.pdf" download>
+                        <button>Download Notes</button>
+                        </a>
+                    </div>
+
+                    <div class="R">
+                        <img src="books-stack-of-three.png" alt="" srcset="">
+                        <a href="">DAA Notes</a>
+                        <p>Explore study guides tips, <br>and more.</p>
+                        <a href="notes.pdf" download>
+                        <button>Download Notes</button>
+                        </a>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+            
 
 
     </main>

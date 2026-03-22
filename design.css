@@ -11,7 +11,7 @@
 
 body {
     background: #f4f6f9;
-    height: 250vh;
+    height: 500vh;
     margin: 0;
     padding: 0;
 
@@ -70,6 +70,7 @@ body {
 }
 
 .nav-links li a {
+    position: relative;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
@@ -109,6 +110,22 @@ body {
 
 }
 
+.nav-links li a::after{
+    content: '';
+    height: 1.5px;
+    width: 0%;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    transition: 0.5s;
+
+}
+
+.nav-links li a:hover::after{
+    width: 100%;
+}
+
 .login{
     box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.821);
    
@@ -123,7 +140,9 @@ body {
 
 
      
-
+.home{
+    scroll-margin-top: 100px;
+}
 
 
 
@@ -171,7 +190,7 @@ body {
 }
 
 .search-box input{
-    width: 300px;
+    width: 400px;
     padding: 10px 15px;
     border-radius: 20px;
     border: 1px solid;
@@ -181,9 +200,31 @@ body {
 
 .search-box i {
     
-
+    margin-top: 0.5rem;
     color:black;
     cursor: pointer;
+}
+
+#suggestions{
+list-style:none;
+width:500px;
+margin:auto;
+padding:0;
+background:white;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,0.4);
+position:relative;
+top:-20px;
+}
+
+#suggestions li{
+padding:10px;
+cursor:pointer;
+border-bottom:1px solid #ffffff;
+}
+
+#suggestions li:hover{
+background:#f4f6f9;
 }
 
 
@@ -197,6 +238,7 @@ body {
     justify-content:center;
     width: 900p;
     gap: 30px;
+    margin-bottom: 5rem;
    
     
     
@@ -226,7 +268,7 @@ body {
 .link div:hover{
     transform: scale(1.05);
     box-shadow: 0 12px 24px 1px rgba(0, 0, 0, 0.600);
-    background:linear-gradient(35deg, rgb(243, 185, 14), rgb(18, 164, 197),rgb(5, 244, 176),rgb(219, 219, 18));
+    background:linear-gradient(35deg, rgb(252, 189, 1), rgb(60, 177, 203),rgb(59, 214, 170),rgb(45, 42, 230));
     background-size: 200% 200%;
     animation: gradientMove 6s linear infinite;
 }
@@ -245,7 +287,7 @@ body {
 
 .link div button{
     color: #506fc5;
-    background-color: rgb(253, 255, 255);
+    background-color: rgb(255, 255, 255);
     margin-top: 1rem;
     padding: 4px 10px;
     border-radius: 15px;
@@ -253,18 +295,76 @@ body {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.link div button:hover{
+    background-color:#506fc5;
+    color:#f4f6f9;
 }
 
 
 .link a{
-    display: block;
+    display:block;
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
     color:white;
     margin-bottom: 10px;
+    transition: all 0.5s ease;
+    position: relative;
 }
 
+.Notes::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: white;
+    position: absolute;
+    left: 35%;
+    
+    bottom: 0;
+    transition: 0.5s;
+
+
+}
+.Notes:hover::after{
+    width: 30%;
+}
+
+.pyqs::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: white;
+    position: absolute;
+    left: 37%;
+    
+    bottom: 0;
+    transition: 0.5s;
+
+
+}
+.pyqs:hover::after{
+    width: 28%;
+}
+
+.resources::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: white;
+    position: absolute;
+    left: 24%;
+    
+    bottom: 0;
+    transition: 0.5s;
+
+
+}
+.resources:hover::after{
+    width: 55%;
+}
 
 
 .N img{
@@ -298,3 +398,82 @@ body {
     padding: 5%;
 }
 
+.library{
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+    
+}
+
+.library h1{
+    font-weight:700;
+    
+}
+
+.notes-library{
+    width: 1200px;
+    align-items: center;
+    margin-left: 5rem;
+    
+}
+
+.notes-cont{
+    display: flex;
+    margin: 50px auto;
+    width: 900p;
+    gap: 20px;
+    margin-bottom: 5rem;
+    
+}
+
+.notes-cont p{
+    font-size: 14px;
+    color:#000000;
+    font-family: 'poppins','serif';
+    line-height: 1.6;
+}
+
+.notes-cont div{
+     background:#506fc5;
+    color: #ffffff;
+    padding: 30px;
+    width: 265px;
+    height: 265px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.512);
+    transition: all 0.3s ease, box-shadow;
+}
+
+.notes-cont div button{
+    color: #506fc5;
+    background-color: rgb(253, 255, 255);
+    margin-top: 1rem;
+    padding: 4px 10px;
+    border-radius: 15px;
+    border: 1px solid;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.notes-cont div button:hover{
+    background-color:#506fc5;
+    color:#010201;
+
+}
+
+.notes-cont a{
+     display:block;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color:white;
+    margin-bottom: 10px;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.notes-cont div i{
+    font-size: 50px;
+    margin-bottom: 1.5rem;
+}

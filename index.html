@@ -48,8 +48,8 @@
 
 
                 <input type="text" id="searchInput" placeholder="search subjects..."
-                    onkeypress="if(event.key==='Enter') searchFunction()">
-                <i class="fa-solid fa-magnifying-glass" onclick="searchFunction()"></i>
+                    onkeyup="searchFuntion()">
+                     <i class="fa-solid fa-magnifying-glass" onclick="searchFunction()"></i>
                 
 
 
@@ -96,8 +96,13 @@
 
             <div class="notes-library">
                 <div class="notes-cont">
+
+                    <div id="noresult">
+                        <p>Notes are not available related to this search</p>
+
+                    </div>
                     
-                    <div>
+                    <div class="card" card-name="physics notes">
                        <i class="fa-solid fa-atom" style="color: rgb(252, 252, 250);"></i>
                         <a href="">Physics Notes</a>
                         <p>Clear and organize notes, <br>Download now.</p>
@@ -106,7 +111,7 @@
                         </a>
                     </div>
 
-                    <div>
+                    <div class="card" card-name="html notes">
                         <i class="fa-brands fa-html5" style="color: rgb(255, 255, 255);"></i>
                         <a href="">HTML Notes</a>
                         <p>Explore study guides tips, <br>and more.</p>
@@ -117,7 +122,7 @@
 
                     
 
-                    <div>
+                    <div class="card" card-name="css notes" card-name="CSS">
                         <i class="fa-brands fa-css3-alt" style="color: rgb(250, 252, 255);"></i>
                         <a href="">CSS Notes</a>
                         <p>Explore study guides tips, <br>and more.</p>
@@ -126,194 +131,161 @@
                         </a>
                     </div>
 
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
+                    <div class="card" card-name="Chemistry notes">
+                         <i class="fa-brands fa-css3-alt" style="color: rgb(250, 252, 255);"></i>
+                        <a href="">Chemistry Notes</a>
                         <p>Explore study guides tips, <br>and more.</p>
                         <a href="notes.pdf" download>
                         <button>Download Notes</button>
                         </a>
                     </div>
 
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
+                   <div class="card" card-name="java script notes">
+                       <i class="fa-solid fa-atom" style="color: rgb(252, 252, 250);"></i>
+                        <a href="">Java Script Notes</a>
+                        <p>Clear and organize notes, <br>Download now.</p>
                         <a href="notes.pdf" download>
                         <button>Download Notes</button>
                         </a>
                     </div>
 
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
+                    <div class="card" card-name="Digital Electronics notes">
+                       <i class="fa-solid fa-atom" style="color: rgb(252, 252, 250);"></i>
+                        <a href="">Digital Electronics Notes</a>
+                        <p>Clear and organize notes, <br>Download now.</p>
                         <a href="notes.pdf" download>
                         <button>Download Notes</button>
                         </a>
                     </div>
 
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
+                    <div class="card" card-name="Mathematics-1 notes">
+                       <i class="fa-solid fa-atom" style="color: rgb(252, 252, 250);"></i>
+                        <a href="">Mathematics-1 Notes</a>
+                        <p>Clear and organize notes, <br>Download now.</p>
                         <a href="notes.pdf" download>
                         <button>Download Notes</button>
                         </a>
                     </div>
 
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
+                    <div class="card" card-name="C Language notes">
+                       <i class="fa-solid fa-atom" style="color: rgb(252, 252, 250);"></i>
+                        <a href="">C Language Notes</a>
+                        <p>Clear and organize notes, <br>Download now.</p>
                         <a href="notes.pdf" download>
                         <button>Download Notes</button>
                         </a>
                     </div>
 
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
+                    <div class="card" card-name="ITIM notes">
+                       <i class="fa-solid fa-atom" style="color: rgb(252, 252, 250);"></i>
+                        <a href="">ITIM Notes</a>
+                        <p>Clear and organize notes, <br>Download now.</p>
                         <a href="notes.pdf" download>
                         <button>Download Notes</button>
                         </a>
                     </div>
 
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
+                    <div class="card" card-name="python notes">
+                       <i class="fa-solid fa-atom" style="color: rgb(252, 252, 250);"></i>
+                        <a href="">Python Notes</a>
+                        <p>Clear and organize notes, <br>Download now.</p>
                         <a href="notes.pdf" download>
                         <button>Download Notes</button>
                         </a>
                     </div>
 
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
+                    <div class="card" card-name="data structure notes">
+                       <i class="fa-solid fa-atom" style="color: rgb(252, 252, 250);"></i>
+                        <a href="">Data Structure Notes</a>
+                        <p>Clear and organize notes, <br>Download now.</p>
                         <a href="notes.pdf" download>
                         <button>Download Notes</button>
                         </a>
                     </div>
 
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
+                    <div class="card" card-name="COA notes">
+                       <i class="fa-solid fa-atom" style="color: rgb(252, 252, 250);"></i>
+                        <a href="">COA Notes</a>
+                        <p>Clear and organize notes, <br>Download now.</p>
                         <a href="notes.pdf" download>
                         <button>Download Notes</button>
                         </a>
                     </div>
 
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
+                    <div class="card" card-name="DAA notes">
+                       <i class="fa-solid fa-atom" style="color: rgb(252, 252, 250);"></i>
                         <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
+                        <p>Clear and organize notes, <br>Download now.</p>
                         <a href="notes.pdf" download>
                         <button>Download Notes</button>
                         </a>
                     </div>
 
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
+                    <div class="card" card-name="bc&m notes">
+                       <i class="fa-solid fa-atom" style="color: rgb(252, 252, 250);"></i>
+                        <a href="">Basic Civil & Mechanical Notes</a>
+                        <p>Clear and organize notes, <br>Download now.</p>
                         <a href="notes.pdf" download>
                         <button>Download Notes</button>
                         </a>
                     </div>
 
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
+                    <div class="card" card-name="physics notes">
+                       <i class="fa-solid fa-atom" style="color: rgb(252, 252, 250);"></i>
+                        <a href="">Basic Electrical Engineering Notes</a>
+                        <p>Clear and organize notes, <br>Download now.</p>
                         <a href="notes.pdf" download>
                         <button>Download Notes</button>
                         </a>
                     </div>
 
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
+                    <div class="card" card-name="physics notes">
+                       <i class="fa-solid fa-atom" style="color: rgb(252, 252, 250);"></i>
+                        <a href="">Machine Learning Notes</a>
+                        <p>Clear and organize notes, <br>Download now.</p>
                         <a href="notes.pdf" download>
                         <button>Download Notes</button>
                         </a>
                     </div>
 
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
+                    <div class="card" card-name="physics notes">
+                       <i class="fa-solid fa-atom" style="color: rgb(252, 252, 250);"></i>
+                        <a href="">Physics Notes</a>
+                        <p>Clear and organize notes, <br>Download now.</p>
                         <a href="notes.pdf" download>
                         <button>Download Notes</button>
                         </a>
                     </div>
 
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
+                    <div class="card" card-name="physics notes">
+                       <i class="fa-solid fa-atom" style="color: rgb(252, 252, 250);"></i>
+                        <a href="">Physics Notes</a>
+                        <p>Clear and organize notes, <br>Download now.</p>
                         <a href="notes.pdf" download>
                         <button>Download Notes</button>
                         </a>
                     </div>
 
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
+                    <div class="card" card-name="physics notes">
+                       <i class="fa-solid fa-atom" style="color: rgb(252, 252, 250);"></i>
+                        <a href="">Physics Notes</a>
+                        <p>Clear and organize notes, <br>Download now.</p>
                         <a href="notes.pdf" download>
                         <button>Download Notes</button>
                         </a>
                     </div>
 
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
+                    <div class="card" card-name="physics notes">
+                       <i class="fa-solid fa-atom" style="color: rgb(252, 252, 250);"></i>
+                        <a href="">Physics Notes</a>
+                        <p>Clear and organize notes, <br>Download now.</p>
                         <a href="notes.pdf" download>
                         <button>Download Notes</button>
                         </a>
                     </div>
 
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
-                        <a href="notes.pdf" download>
-                        <button>Download Notes</button>
-                        </a>
-                    </div>
-
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
-                        <a href="notes.pdf" download>
-                        <button>Download Notes</button>
-                        </a>
-                    </div>
-
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
-                        <a href="notes.pdf" download>
-                        <button>Download Notes</button>
-                        </a>
-                    </div>
-
-                    <div class="R">
-                        <img src="books-stack-of-three.png" alt="" srcset="">
-                        <a href="">DAA Notes</a>
-                        <p>Explore study guides tips, <br>and more.</p>
-                        <a href="notes.pdf" download>
-                        <button>Download Notes</button>
-                        </a>
-                    </div>
+                    
+                
 
                     
 

@@ -2,30 +2,48 @@ function searchFunction(){
 
 let query = document.getElementById("searchInput").value.toLowerCase();
 
-if(query.includes("c") || query.includes("programming")){
-    window.location.href = "c-programming.html";
-}
-else if(query.includes("iiot")){
-    window.location.href = "iiot.html";
-}
-else if(query.includes("notes")){
-    window.location.href = "notes.html";
-}
-else if(query.includes("pyq")){
-    window.location.href = "pyqs.html";
-}
-else if(query.includes("resource")){
-    window.location.href = "resources.html";
-}
-else{
-    alert("No results found ❌");
+let cards=document.querySelectorAll(".card");
+
+let message=document.getElementById("noresult");
+
+let found=false;
+
+cards.forEach(card=>{
+    let text=card.innerText.toLowerCase();
+    let words = text.split(" ");
+    let abbreviation = words.map(word => word[0]).join("");
+
+    if(text.includes(query) || abbreviation.includes(query)){
+        card.style.display = "block";
+        if (!found){
+            card.scrollIntoView({behavior:"smooth",block:"center"});
+            found=true;
+        }
+    }else{
+        card.style.display="none";
+        
+    }
+});
+if(!found){
+    message.style.display = "block";
+
+    // scroll to message
+    message.scrollIntoView({behavior:"smooth", block:"center"});
+} else {
+    message.style.display = "none";
 }
 
 }
 
 
 
-
+document.addEventListener("DOMContentLoaded", function() {
+document.getElementById("searchInput").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        searchFunction();
+    }
+});
+});
 
 let subjects = [
 "C Programming",

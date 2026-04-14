@@ -10,16 +10,18 @@
 }
 
 body {
-    background: #f4f6f9;
+    background: #f1f5f9;
     height: 500vh;
     margin: 0;
     padding: 0;
+    justify-content: center;
 
 }
 
 
 
 .header{
+    width: 100%;
     position:sticky;
     z-index: 1000;
     top: 0%;
@@ -28,7 +30,7 @@ body {
 .navigation {
     width: 100%;
     height: 100px;
-    background: #506fc5;
+    background:   #7f48fe;
     display: flex;
     padding: 20px;
     align-items: center;
@@ -41,8 +43,8 @@ body {
 }
 
 .logo {
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 600;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     
@@ -50,11 +52,14 @@ body {
 }
 
 .logo span {
-    margin-left: 5px;
+    margin-left: 2rem;
 }
 
 .hub{
-    color: rgb(251, 255, 0);
+    font-family:'poppins'sans-serif;
+    letter-spacing: 1px;
+    font-size: 19px;
+    color: rgb(6, 246, 154);
 }
 
 
@@ -90,13 +95,13 @@ body {
 .nav-btn a {
     flex-shrink: 0;
     text-decoration: none;
-    font-size: larger;
+    font-size:medium;
    
-    padding: 3px 15px 5px 15px;
-    border-radius: 40px;
+    padding: 7px 15px 7px 15px;
+    border-radius: 10px;
 
     transition: 0.5s;
-    background-color: rgba(255, 255, 255, 0.822);
+    background-color:rgba(255, 255, 255, 0.822);
     color: #222;
     
 
@@ -161,10 +166,29 @@ body {
 }
 
 .exams{
-    color: #506fc5;
-    font-family:'Poppins', sans-serif ;
-    
-   
+     background: linear-gradient(35deg, #4f46e5, #9333ea, rgb(35, 184, 230));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+    background-size: 200% 200%;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientMove 3s linear infinite;
+
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 
@@ -181,7 +205,10 @@ body {
 
 
 .search-box{
+   
+    position: relative;
     display: flex;
+    border-radius: 20px;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -193,17 +220,21 @@ body {
 .search-box input{
     width: 400px;
     padding: 10px 15px;
-    border-radius: 20px;
+    border-radius: 22px;
     border: 1px solid;
+    
 
     
 }
 
 .search-box i {
+    top: 9%;
+    margin-left: 21rem;
     
     margin-top: 0.5rem;
     color:black;
     cursor: pointer;
+    position: absolute;
 }
 
 #suggestions{
@@ -254,7 +285,7 @@ background:#f4f6f9;
 }
 
 .link div{
-    background:#506fc5;
+    background: #7f48fe;
     color: #ffffff;
     padding: 30px;
     width: 265px;
@@ -267,41 +298,50 @@ background:#f4f6f9;
 }
 
 .link div:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
     box-shadow: 0 12px 24px 1px rgba(0, 0, 0, 0.600);
-    background:linear-gradient(35deg, rgb(252, 189, 1), rgb(60, 177, 203),rgb(59, 214, 170),rgb(45, 42, 230));
+    background:linear-gradient(35deg, rgb(252, 189, 1) , rgb(60, 177, 203),rgb(22, 180, 211),rgb(83, 19, 201),#7f48fe );
     background-size: 200% 200%;
     animation: gradientMove 6s linear infinite;
 }
 
 @keyframes gradientMove{
     0%{
-        background-position: 0% 50%;
+        background-position: 0% 25%;
     }
     50%{
-        background-position: 100% 50%;
+        background-position: 100% 75%;
     }
     100%{
-        background-position: 0% 50%;
+        background-position: 0% 25%;
     }
 }
 
 .link div button{
-    color: #506fc5;
+    color: #000000;
     background-color: rgb(255, 255, 255);
     margin-top: 1rem;
-    padding: 4px 10px;
-    border-radius: 15px;
-    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 550;
     cursor: pointer;
+    box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.521);
     transition: all 0.5s ease;
 }
 
+
 .link div button:hover{
-    background-color:#506fc5;
+    background-color:#4f46e5;
     color:#f4f6f9;
+    border: none;
+    
+}
+
+.link div p{
+    font-family: 'Poppins', sans-serif;
+     
 }
 
 
@@ -435,12 +475,12 @@ background:#f4f6f9;
 .notes-cont p{
     font-size: 14px;
     color:#000000;
-    font-family: 'poppins','serif';
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
 }
 
 .notes-cont div{
-    background:#506fc5;
+    background: #7f48fe;
     color: #ffffff;
     padding: 30px;
     width: 265px;
@@ -448,31 +488,40 @@ background:#f4f6f9;
     text-align: center;
     border-radius: 12px;
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.512);
-    transition: all 0.3s ease, box-shadow;
+    transition: all 0.3s ease;
+}
+.notes-cont div:hover{
+    transform:scale(1.02);
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.612);
+
 }
 
 .notes-cont div button{
-    color: #506fc5;
-    background-color: rgb(253, 255, 255);
+    color:#222;
+    background-color: #eee;
     margin-top: 1rem;
-    padding: 4px 10px;
-    border-radius: 15px;
-    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border:none;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 550;
     cursor: pointer;
+    box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.521);
     transition: all 0.5s ease;
 }
 .notes-cont div button:hover{
-    background-color:#506fc5;
-    color:#010201;
+    background-color:white;
+    color: #7f48fe;
+    box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.821);
+    border: none;
+    
 
 }
 
 .notes-cont a{
     display:block;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 550;
     text-decoration: none;
     color:white;
     margin-bottom: 8px;

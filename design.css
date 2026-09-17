@@ -25,6 +25,7 @@ body {
     position:sticky;
     z-index: 1000;
     top: 0%;
+    flex-wrap: wrap;
 }
 
 .navigation {
@@ -32,6 +33,7 @@ body {
     height: 100px;
     background:   #7f48fe;
     display: flex;
+    flex-wrap: wrap;
     padding: 20px;
     align-items: center;
     border-radius: 0 0 5px 5px;
@@ -166,7 +168,7 @@ body {
 }
 
 .exams{
-     background: linear-gradient(35deg, #4f46e5, #9333ea, rgb(35, 184, 230));
+   background: linear-gradient(35deg,  #9333ea,#4f46e5, rgb(35, 184, 230));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -266,6 +268,7 @@ background:#f4f6f9;
 
 .link {
     display: flex;
+    flex-wrap: wrap;
     margin: 50px auto;
     justify-content:center;
     width: 900p;
@@ -491,7 +494,7 @@ background:#f4f6f9;
     transition: all 0.3s ease;
 }
 .notes-cont div:hover{
-    transform:scale(1.02);
+    transform:scale(1.01);
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.612);
 
 }
@@ -511,7 +514,7 @@ background:#f4f6f9;
 }
 .notes-cont div button:hover{
     background-color:white;
-    color: #7f48fe;
+    /* color: #7f48fe; */
     box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.821);
     border: none;
     
@@ -537,7 +540,7 @@ background:#f4f6f9;
 #noresult{
     display: none;
     text-align: center;
-    background-color: #ffe6e6;
+    background-color: #ffffff;
     margin-top: 2rem;
 }
 

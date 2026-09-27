@@ -77,7 +77,7 @@ body {
 
 .navigation {
     width: 100%;
-    min-height: 80px;
+    min-height: 120px;
 
     background-color: var(--primary-color);
 
@@ -750,6 +750,7 @@ body {
 
 
 .notes-cont .card {
+
     width: 100%;
     min-height: 265px;
 
@@ -956,7 +957,7 @@ body {
     }
 
 
-    /* FEATURE CARDS */
+   
 
     .link {
         max-width: 850px;
@@ -965,11 +966,12 @@ body {
     }
 
 
-    /* NOTES */
+  
 
     .notes-cont {
         grid-template-columns:
-            repeat(3, minmax(0, 1fr));
+            repeat(3,1fr);
+            min-width: 600px;
     }
 
 }
@@ -994,7 +996,10 @@ body {
 
     .logo {
         margin-right: auto;
+       
     }
+
+    
 
 
     .nav-links {
@@ -1022,11 +1027,11 @@ body {
     }
 
 
-    /* FEATURE CARDS */
+    
 
     .link {
         grid-template-columns:
-            repeat(2, minmax(0, 1fr));
+            repeat(2, 1fr);
 
         max-width: 600px;
     }
@@ -1036,7 +1041,7 @@ body {
 
     .notes-cont {
         grid-template-columns:
-            repeat(2, minmax(0, 1fr));
+            repeat(2, 1fr);
     }
 
 
@@ -1148,7 +1153,7 @@ body {
 
 
     .search-box {
-        max-width: 100%;
+        max-width: 70%;
 
         margin-top: 25px;
     }
@@ -1227,7 +1232,7 @@ body {
 
 
     .notes-cont .card {
-        min-height: 250px;
+        min-height: 200px;
 
         max-width: 350px;
 

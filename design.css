@@ -737,6 +737,7 @@ body {
     width: 100%;
 
     display: grid;
+    
 
     grid-template-columns:
         repeat(4, minmax(0, 1fr));
@@ -744,6 +745,12 @@ body {
     gap: 20px;
 
     padding: 20px 0;
+}
+
+.first-year{
+    display: flex;
+    justify-content: center;
+
 }
 
 
@@ -1048,8 +1055,18 @@ body {
     .notes-library {
         height: 650px;
     }
-
 }
+
+    .year{
+    font-size: 30px;
+    color: #222;
+    margin-bottom: 25px;
+    padding-left: 5px;
+    border-left: 5px solid #7c3fff;
+    padding-left: 15px;
+    }
+
+
 
 
 
